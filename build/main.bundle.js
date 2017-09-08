@@ -12,10 +12,8 @@ var getBeersAPI = function getBeersAPI() {
         for (var i = 0; i < beers.length; i++) {
             result += "<b>Name : </b>" + beers[i].name +
                       "<br> <b>Tagline : </b>" + beers[i].tagline + 
-                      "<br> <b>PH : </b>" + beers[i].ph + 
                       "<br> <b>Yeast : </b>" + beers[i].ingredients.yeast + 
                       "<br> <b>First Brewed : </b>" + beers[i].first_brewed + 
-                      "<br> <b>Description : </b>" + beers[i].description + 
                       "<br>" + 
                       "<image src =" + beers[i].image_url + " /><hr>";
         }
@@ -36,10 +34,10 @@ var getBeerAPIByName = function getBeerAPIByName(name) {
         for (var i = 0; i < beers.length; i++) {
             result += "<b>Name : </b>" + beers[i].name + 
                       "<br> <b>Tagline : </b>" + beers[i].tagline + 
-                      "<br> <b>PH : </b>" + beers[i].ph + 
+                     
                       "<br> <b>Yeast : </b>" + beers[i].ingredients.yeast + 
                       "<br> <b>First Brewed : </b>" + beers[i].first_brewed + 
-                      "<br> <b>Description : </b>" + beers[i].description + 
+                      
                       "<br>" + 
                       "<image src =" + beers[i].image_url + " /><hr>";
         }
