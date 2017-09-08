@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <title>Beer Search</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,21 +11,34 @@
   <script src='build/main.bundle.js'></script>
 
 </head>
+<style>
+  body {background-image : url(http://wallsdesk.com/wp-content/uploads/2016/12/Heineken-Wallpapers.jpg);}
+  body {background-repeat: no-repeat;}
+  body {background-size: cover;}
+  body {background-attachment: fixed;} 
+  
+  h1 {color: red;}
+  h2 {color: greenyellow;}
+  p {color:yellow;}
 
+</style>
 <body>
-  <div class="">
-    <div class="">
-      <center><h2>Beer Searching Using Punk API</h2></center>
-    </div>
-      <br>
-        <div class="">
-          <center><input type="text" size="60" id="beer-name"  placeholder="Enter beer name"> </center>
-          <br>
-          <center><button onclick="toSearch(document.getElementById('beer-name').value)" class="btn btn-primary">Search</button></center>
+  <div class="body">
+      <div class="head">
 
-        </div>
+           <center><h2><u>Beer Searching</u></h2></center>
+
       </div>
-      
+      <br>
+          <div class=""body>
+
+                <center><input type="text" size="60" id="beer-name"  placeholder="Enter beer name"> </center>
+                <br>
+                <center><button onclick="toSearch(document.getElementById('beer-name').value)" class="btn btn-primary">Search</button></center>
+
+          </div>
+  </div>
+      <hr>
       <center><p id="result"></p></center>
     </div>   
 </body>

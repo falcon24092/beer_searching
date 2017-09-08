@@ -8,9 +8,19 @@ var getBeersAPI = function getBeersAPI() {
     }).then(function (response) {
         var beers = response;
         var result = "";
+        
         for (var i = 0; i < beers.length; i++) {
-            result += "<b>Name : </b>" + beers[i].name + "<br> <b>Tagline : </b>" + beers[i].tagline + "<br> <b>PH : </b>" + beers[i].ph + "<br> <b>Yeast : </b>" + beers[i].ingredients.yeast + "<br> <b>First Brewed : </b>" + beers[i].first_brewed + "<br> <b>Description : </b>" + beers[i].description + "<br>" + "<image src =" + beers[i].image_url + "/><hr>";
+            result += "<b>Name : </b>" + beers[i].name +
+                      "<br> <b>Tagline : </b>" + beers[i].tagline + 
+                      "<br> <b>PH : </b>" + beers[i].ph + 
+                      "<br> <b>Yeast : </b>" + beers[i].ingredients.yeast + 
+                      "<br> <b>First Brewed : </b>" + beers[i].first_brewed + 
+                      "<br> <b>Description : </b>" + beers[i].description + 
+                      "<br>" + 
+                      "<image src =" + beers[i].image_url + " /><hr>";
         }
+        
+
         document.getElementById('result').innerHTML = result;
     });
 };
@@ -24,8 +34,17 @@ var getBeerAPIByName = function getBeerAPIByName(name) {
         var beers = response;
         var result = "";
         for (var i = 0; i < beers.length; i++) {
-            result += "<b>Name : </b>" + beers[i].name + "<br> <b>Tagline : </b>" + beers[i].tagline + "<br> <b>PH : </b>" + beers[i].ph + "<br> <b>Yeast : </b>" + beers[i].ingredients.yeast + "<br> <b>First Brewed : </b>" + beers[i].first_brewed + "<br> <b>Description : </b>" + beers[i].description + "<br>" + "<image src =" + beers[i].image_url + "/><hr>";
+            result += "<b>Name : </b>" + beers[i].name + 
+                      "<br> <b>Tagline : </b>" + beers[i].tagline + 
+                      "<br> <b>PH : </b>" + beers[i].ph + 
+                      "<br> <b>Yeast : </b>" + beers[i].ingredients.yeast + 
+                      "<br> <b>First Brewed : </b>" + beers[i].first_brewed + 
+                      "<br> <b>Description : </b>" + beers[i].description + 
+                      "<br>" + 
+                      "<image src =" + beers[i].image_url + " /><hr>";
         }
+        
+        
         document.getElementById('result').innerHTML = result;
     });
 };
