@@ -1,8 +1,8 @@
 {
-  "name": "bear-searching",
+  "name": "beer-searching",
   "version": "1.0.0",
   "description": "Thongchai Chaimasereekul 57102010271",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "babel --presets es2015 js/index.js -o build/main.bundle.js",
